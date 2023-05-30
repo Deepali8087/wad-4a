@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-
+1.1.0.min.css" />
+
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+<div data-role="header">
+<h1>Student Registration</h1>
+</div>
+<div data-role="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Register.html" class="ui-btn-active">Register</a></li>
+        <li><a href="About us.html">About us</a></li>
+    </ul>
+</div>
+<div data-role="main" class="ui-content">
+    <form method="post" action="#pageone" data-ajax="true">
+    <label for="name">Name : <span>*</span></label>
+    <input type="text" name="name" id="name" placeholder="Name">
+    <label for="email">Email: <span>*</span></label>
+    <input type="email" id="email" name="email" placeholder="Email"/>
+    <div data-role="controlgroup">
+    <legend>Gender:</legend>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="dob">Date of Birth<span>*</span></label>
+    <input type="date" id="date" name="date" placeholder="DOB"/>
+    </div>
+    <fieldset data-role="controlgroup">
+    <legend>Course:</legend>
+    <label for="CS">CS</label>
+    <input type="checkbox" id="CS" value="CS">
+    <label for="IT">IT</label>
+    <input type="checkbox" id="IT" value="IT">
+    <label for="Mechanical">Mechanical</label>
+    <input type="checkbox" id="Mechanical" value="Mechanical">
+    <label for="ENTC">ENTC</label>
+    <input type="checkbox" id="ENTC" value="ENTC">
+    <label for="Civil">Civil</label>
+    <input type="checkbox" id="Civil" value="Civil">
+    <label for="Telecommunications">Telecommunications</label>
+    <input type="checkbox" id="Telecommunications" value="Telecommunications">
+    <label for="Robotics">Robotics</label>
+    <input type="checkbox" id="Robotics" value="Robotics">
+    <label for="others">Others</label>
+    <input type="checkbox" id="others" value="others">
+    </fieldset>
+    <label>Password <span>*</span></label>
+    <input type="password" data-clear-btn="false">
+    <label>Confirm Password <span>*</span></label>
+    <input type="password" data-clear-btn="false">
+    <input type="submit" data-inline="true" value="Register" data-theme="b">
+    </form>
+    </div>
+    </body>
+    </html>
+    </body>
+    </html>
